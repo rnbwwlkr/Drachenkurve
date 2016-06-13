@@ -22,7 +22,7 @@ public class Drachenkurve extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Drachenkurve");
         Group root = new Group();
-        Canvas canvas = new Canvas(1600, 1200);
+        Canvas canvas = new Canvas(1300, 900);
         GraphicsContext gc = canvas.getGraphicsContext2D();
         drawShapes(gc);
         root.getChildren().add(canvas);
@@ -55,10 +55,10 @@ public class Drachenkurve extends Application {
 		
 		double z = 5;
 		
-		double x1 = 600+z;
-        double x2 = 600;
-        double y1 = 400;
-        double y2 = 400;
+		double x1 = 400;
+        double x2 = 400;
+        double y1 = 500;
+        double y2 = 500+z;
         
         gc.strokeLine(x1, y1, x2, y2);
         
